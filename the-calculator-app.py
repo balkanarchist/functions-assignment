@@ -1,4 +1,7 @@
 # Task 1: Create functions for each (basic) arithmetic operation.
+# Task 2: Implement user input to receive numbers and an operation choice.
+# Task 3: Ensure your program can handle division by zero and other potential errors.
+
 def addition(num1, num2):
     return num1 + num2
 
@@ -14,7 +17,6 @@ def division(num1, num2):
     except ZeroDivisionError:
         return "Uh-oh! You cannot divide by zero."
     
-# Task 2: Implement user input to receive numbers and an operation choice.
 num1 = float(input("Please input the first number: "))
 num2 = float(input("Please input the second number: "))
 operation = input("Choose an operation (+, -, *, /): ")
@@ -33,5 +35,4 @@ elif operation == "/":
         result = num1 / num2
         print(result)
     else:
-        print("Uh oh. You cannot divide by zero.\n")
-# Task 3: Ensure your program can handle division by zero and other potential errors.
+        print("Uh oh, Einstein. You cannot divide by zero.\n")
