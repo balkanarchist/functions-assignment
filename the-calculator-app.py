@@ -15,4 +15,23 @@ def division(num1, num2):
         return "Uh-oh! You cannot divide by zero."
     
 # Task 2: Implement user input to receive numbers and an operation choice.
+num1 = float(input("Please input the first number: "))
+num2 = float(input("Please input the second number: "))
+operation = input("Choose an operation (+, -, *, /): ")
+
+if operation == "+":
+    result = num1 + num2
+    print(result)
+elif operation == "-":
+    result = num1 - num2
+    print(result)
+elif operation == "*":
+    result = num1 * num2
+    print(result)
+elif operation == "/":
+    if num2 != 0:
+        result = num1 / num2
+        print(result)
+    else:
+        print("Uh oh. You cannot divide by zero.\n")
 # Task 3: Ensure your program can handle division by zero and other potential errors.
